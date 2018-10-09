@@ -8,10 +8,10 @@ import React from 'react';
 //     </div>
 // )
 
-const Content = () => (
+const Content = (props) => (
     <div>
-        <button className = 'btn btn-primary'>Login</button>
-        <button className = 'btn btn-primary'>Register</button>
+        <button className = 'btn btn-primary' onClick={() => props.handlePageChange("Login")}>Login</button>
+        <button className = 'btn btn-primary' onClick={() => props.handlePageChange("Register")}>Register</button>
     </div>
 )
 
