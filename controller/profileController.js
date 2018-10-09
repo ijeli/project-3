@@ -1,7 +1,7 @@
 const db = require('../models');
 
 module.exports = {
-    findAllProfile: function(req, res){
+    findAllProfile: (req, res) => {
         db.Profiles.findAll({}).then(dbModel => res.json(dbModel))
         .catch(err => res.status(500).json(err));
     
