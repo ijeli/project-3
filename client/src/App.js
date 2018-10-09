@@ -5,6 +5,7 @@ import './App.css';
 import Content from './components/Content';
 // import Login from './components/nav/Login';
 // import Register from './components/nav/Register';
+import ConditionalRender from './components/ConditionalRender';
 
 class App extends Component {
   render() {
@@ -19,7 +20,7 @@ class App extends Component {
               <Route exact path = '/Register' component={Register}/>
             </div>
         </Router> */}
-        <Content/>
+        <ConditionalRender/>
 
       </div>
     );
