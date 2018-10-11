@@ -4,38 +4,48 @@ import '../App.css';
 
 
 const Navbar =props =>
- <nav className="navbar navbar-default">
-<div className="container-fluid">
-  <div className="navbar-header">
-    <a className="navbar-brand">logo</a>
-  </div>
-  <ul className="nav navbar-nav">
-    <li className="active">  <a classNameName={
+ <nav className="navbar navbar-expand-lg navbar-light bg-light">
+<a className="navbar-brand">logo</a>
+<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span className="navbar-toggler-icon"></span>
+</button>
+
+<div className="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul className="navbar-nav mr-auto">
+    <li className="nav-item active">
+    <a classNameName={
       window.location.pathname === '/' 
       ? 'active' :""
       }
       >
       <Link to='/'>Login</Link>
-   </a></li>
-    <li><a classNameName={
+   </a>
+    </li>
+    <li className="nav-item">
+    <a classNameName={
       window.location.pathname === '/Home' 
       ? 'active' :""
       }
       >
       <Link to='/home'>Home</Link>
-   </a></li>
-    <li><a classNameName={
-   window.location.pathname === '/search' 
-      ? 'active':''}
-      >
-      <Link to='/search'>Search</Link><form action=''>
-              <input type='text' placeholder='Search' name='search'/>
-              <button type="submit"><i classNameName="fa fa-search"></i>icon</button>
-          </form>
-</a></li>
+   </a>
+    </li>
    
   </ul>
+  <a classNameName={
+      window.location.pathname === '/Search' 
+      ? 'active' :""
+      }
+      >
+      <Link to='/search'> <form className="form-inline my-2 my-lg-0">
+    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+    <button className="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
+  </form>
+      </Link>
+   </a>
+ 
 </div>
 </nav>
 
 export default Navbar;
+

@@ -109,10 +109,6 @@ align-items: center;
   box-shadow: 4px 4px 10px rgb(56, 56, 56);
   transition: all .2s ease-in-out;
 }
-
-.navbar{
-  width: 100%;
-  background: #61dafb;
-  margin-left: 10px;
-
+a{
+  margin-right: 10px;
 }
