@@ -4,7 +4,6 @@ const db = require('./models'); //Requiring models folder to set up sequelize
 const routes = require('./routes'); //Requiring routes folder that can hold api and html routes
 const app = express();
 
-
 const PORT = process.env.PORT || 3001;
 
 // Configure body parser for AJAX requests

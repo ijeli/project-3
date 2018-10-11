@@ -20,13 +20,5 @@ module.exports = {
             .then(function(info) {
                 res.json(info);
             });
-    },
-
-    findAllSymptoms: (req, res) => {
-        db.Symptoms.findAll({}).then(dbModel => res.json(dbModel))
-        .catch(err => res.status(500).json(err));
-    
     }
-
-
 };

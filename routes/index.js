@@ -8,8 +8,6 @@ router.route('/create').post(profileController.create);
 
 router.route('/:name').get(profileController.findNumber);
 
-router.route('/api/symptoms').get(profileController.findAllSymptoms);
-
 router.use('/', function(req, res) {
 	res.sendFile(path.join(__dirname, '../client/public/index.html'));
 });
