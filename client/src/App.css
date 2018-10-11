@@ -110,3 +110,9 @@ align-items: center;
   transition: all .2s ease-in-out;
 }
 
+.navbar{
+  width: 100%;
+  background: #61dafb;
+  margin-left: 10px;
+
+}
