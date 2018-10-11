@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 // import Login from './components/nav/Login';
 // import Register from './components/nav/Register';
 // import ConditionalRender from './components/ConditionalRender';
+
 import Wrapper from './components/Wrapper';
 import Home from './pages/Home';
 import Search from './pages/Search';
@@ -19,8 +20,8 @@ class App extends Component {
     return (
       <div className="App">
 
- 
-    <div>
+      <Router>
+      <div>
         <Wrapper>
          <Route exact path ='/' component ={Login}/>
           <Navbar/>
@@ -28,6 +29,7 @@ class App extends Component {
           <Route exact path ='/search' component ={Search}/>
         </Wrapper>
       </div>
+      </Router>
   
 
         {/* // <img src={logo} className="App-logo" alt="logo" />
@@ -38,8 +40,8 @@ class App extends Component {
         //       <Route exact path = '/Login' component={Login}/>
         //       <Route exact path = '/Register' component={Register}/>
         //     </div>
-        // </Router>
-        // <ConditionalRender/> */}
+        // </Router> */}
+        {/* <ConditionalRender/> */}
     
 
       </div>
