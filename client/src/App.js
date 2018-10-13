@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import Search from './pages/Search';
 import Navbar from './components/Navbar';
 
+
 import Login from './pages/Login';
 
 
@@ -22,12 +23,12 @@ class App extends Component {
 
       <Router>
       <div>
-        <Wrapper>
-         <Route exact path ='/' component ={Login}/>
-          <Navbar/>
-          <Route exact path ='/home' component ={Home}/>
-          <Route exact path ='/search' component ={Search}/>
-        </Wrapper>
+        {/* <Wrapper> */}
+        <Navbar/>
+        <Route exact path ='/' component ={Login}/>
+        <Route exact path ='/home' component ={Home}/>
+        <Route exact path ='/search' component ={Search}/>
+        {/* </Wrapper> */}
       </div>
       </Router>
   
