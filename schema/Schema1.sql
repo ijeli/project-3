@@ -10,7 +10,8 @@ disease_1 varchar(255),
 disease_2 varchar(255),
 disease_3 varchar(255),
 disease_4 varchar(255),
-disease_5 varchar(255),
+createdAt DATETIME NOT NULL,
+updatedAt DATETIME NOT NULL,
 PRIMARY KEY (id)
 );
 
