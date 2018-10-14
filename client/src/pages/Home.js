@@ -5,7 +5,7 @@ const Home = () =>
  <div>
 <div className='card'>
 <div className='symptoms'>
-    <h1>Symptoms</h1>
+    <h1>Search by Symptoms</h1>
     <button className="btn success">Fever</button>
     <button className="btn info">Aches</button>
     <button className="btn warning">Chills</button>
