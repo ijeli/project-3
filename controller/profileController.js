@@ -12,13 +12,21 @@ module.exports = {
         });
     }, 
 
-    findNumber: (req, res) => {
-        db.Profile.findOne({
-            where: {
-                name: req.param.name
-            }})
-            .then(function(info) {
-                res.json(info);
-            });
+    // findNumber: (req, res) => {
+    //     db.Profile.findOne({
+    //         where: {
+    //             name: req.param.name
+    //         }})
+    //         .then(function(info) {
+    //             res.json(info);
+    //         });
+    // },
+
+
+    findAllSymptoms: (req, res) => {
+        db.Symptoms.findAll({}).then(dbModel => res.json(dbModel))
+        .catch(err => res.status(500).json(err));
+    
     }
+
 };

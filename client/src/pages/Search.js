@@ -5,7 +5,7 @@ const Search = () =>
 
 <div className='card'>
     <div>
-       <h1>Search Items</h1>
+       <h1>Search by Disease</h1>
         <p>Result will be pulled from Database here</p>
     </div>
       
