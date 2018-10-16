@@ -1,5 +1,5 @@
 import React from 'react';
-import Sample from '../components/login/login';
+import LoginModal from '../components/login/login';
 // import GoogleLogin from 'react-google-login';
 // import { GoogleLogin } from 'react-google-login';
 // import FacebookLogin from 'react-facebook-login';
@@ -22,7 +22,7 @@ class Login extends React.Component{
     // onClick={componentClicked}
     // callback={responseFacebook} />,
     />, */}
-        <Sample/>
+        <LoginModal/>
         </div>
     }
 }

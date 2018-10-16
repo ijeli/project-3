@@ -2,7 +2,7 @@ import React from 'react';
 import ReactModalLogin from 'react-modal-login';
 import {facebookConfig, googleConfig} from "./social-config";
  
-class Sample extends React.Component {
+class LoginModal extends React.Component {
  
   constructor(props) {
     super(props);
@@ -104,4 +104,4 @@ class Sample extends React.Component {
     )
   }
 }
-export default Sample;
+export default LoginModal;
